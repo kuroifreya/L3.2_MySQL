@@ -21,13 +21,13 @@ public class BankLoginTest {
     }
 
     @AfterAll
-    void tearDownAll(){
+    static void tearDownAll(){
         cleanDB();
     }
 
     @BeforeEach
     void setUp() {
-        loginPage = open("http://0.0.0.0:9999/", LoginPage.class);
+        loginPage = open("http://localhost:9999/", LoginPage.class);
     }
 
     @Test
